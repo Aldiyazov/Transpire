@@ -26,49 +26,13 @@ The trnpkgs will be open sourced to allow pull requests any user to make transla
 
 Every time someone builds our program, it will fetch a tarball of the most stable translation mapping and store it in the local machine.
 
+## Documentation
+
+**[LINK HERE](https://aldiyarablyazov.github.io/Transpire)**
+
 
 ## Directory Structure
-
-```
-.
-├── LICENSE
-├── README.md
-├── bin
-│   *OMITTED*
-├── build
-│   *OMITTED*
-├── build.gradle # BUILD INSTRUCTION
-├── fetchtranslation.sh #FETCHES BASIC TRANSLATION TEMPLATE
-├── gradle
-│   *OMMITTED*
-├── gradlew # FOR MACHINES WITHOUT GRADLE
-├── gradlew.bat # FOR WINDOWS
-├── samples # SAMPLES TO EXECUTE WITH
-├── settings.gradle # GRADLE SETTINGS
-├── src # ACTUAL SOURCE CODE
-│   ├── main
-│   │   └── java
-│   │       └── Transpire
-│   │           ├── App.java # MAIN PROGRAM ENTRYPOINT
-│   │           ├── CommentSeparator.java # SEPARATE COMMENTS LOGIC
-│   │           ├── Mapper.java # STORES TOKEN-TRANSLATION MAPPING
-│   │           ├── NotSupportedLanguage.java # CUSTOM EXCEPTION 
-│   │           ├── Parser.java # PARSER ENGINE 
-│   │           ├── Prompt.java # PROMPTS DISPLAYED TO USER
-│   │           ├── SpaceSeparator.java # TOKENIZER ENGINE
-│   │           └── Translations.java # TRANSLATION MANAGEMENT ENGINE
-│   └── test
-│			*OMMITTED*
-├── translations # DIRECTORY PER SPOKEN LANGUAGE
-│   ├── fr # TRANSLATION MAPPING JSON PER PROGRAMMING LANGUAGE
-│   │   *OMMITTED
-│   └── jp
-│       *OMITTED*
-│   ...
-├── transpire  # MAIN BINARY
-└── transpireOut # FOLDER FOR OUTPUTTING TRANSLATIONS
-    ├── sampleFile.java
-	└── sampleFile.py
+[TODO]
 ```
 
 ## How to Build
@@ -127,8 +91,3 @@ One can also run it using the `transpire` binary
 ./transpire sampleFile.java -u --lang java --source jp --target en
 ```
 
-`
-
-
-
-[A] https://gradle.org/install/
