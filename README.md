@@ -3,8 +3,9 @@
 *NO ENGLISH? NO PROBLEM!*
 
 ## Project Description
+Write code in your native spoken language. Compile it. Ever wanted to write Java in French or Python in Japanese? Well now you can, and much more.
 
-This project sets up an open-source-contribution environemnt where users anywhere around the globe can contribute translations of tokens in various different languages.
+This project sets up an open-source-contribution environment where users anywhere around the globe can contribute translations of tokens in various different languages.
 
 Our project will automatically keep track of new translation contributions and integrate it into our "transpiler" which will allow you to code in any human-spoken-language and generate source code for any programming langauge (given that someone committed translations of it to the repository).
 
@@ -28,7 +29,7 @@ Every time someone builds our program, it will fetch a tarball of the most stabl
 
 ## Documentation
 
-**[LINK HERE](https://aldiyarablyazov.github.io/Transpire)**
+**[LINK HERE](https://aldiyazov.github.io/Transpire)**
 
 
 ## Directory Structure
@@ -83,7 +84,7 @@ named arguments:
   --verbose, -v          Whether the program should be verbose.
 ```
 
-Gradle automatically runs the transpire app with the arguments stated inside --args. The above example will take the the java file (`--lang java`) called sampleFile.java, read it as japanese (`--source jp`), and map it to the standard java syntax (`--target en`) using the respective json. The `-u` argument always fetches the most up-to-date translation and caches it into local machine. If you do not have internet connection, drop the `-u`.
+Cargo automatically runs the transpire app with the arguments stated inside --args. The above example will take the the java file (`--lang java`) called sampleFile.java, read it as japanese (`--source jp`), and map it to the standard java syntax (`--target en`) using the respective json. The `-u` argument always fetches the most up-to-date translation and caches it into local machine. If you do not have internet connection, drop the `-u`.
 
 One can also run it using the `transpire` binary
 
