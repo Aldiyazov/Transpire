@@ -7,8 +7,5 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-<<<<<<< HEAD
 argparse = "0.2.2"
-=======
 regex = "1"
->>>>>>> 7843c4b3f3916bb4b1b56d84a714f8a75887d53b

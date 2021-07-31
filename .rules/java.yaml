@@ -1,0 +1,49 @@
+# Java Rules file
+
+ID:
+  nl:
+    - '\n'
+    - '\EOF'
+  end: ';'
+  eq:
+    - '='
+    - '+='
+    - '-='
+    - '*='
+    - '/='
+  op:
+    - '+'
+    - '-'
+    - '*'
+    - '/'
+    - '%'
+  if: 'if'
+  else: 'else'
+  catch: 'catch'
+  switch: 'switch'
+  case: 'case'
+  lambda: '->'
+  parenthesis_open: '('
+  parenthesis_close: ')'
+  curly_bracket_open: '{'
+  curly_bracket_close: '}'
+  bracket_open: '['
+  bracket_close: ']'
+
+
+OBJ:
+  - 'int'
+  - 'boolean'
+  - 'float'
+  - 'double'
+
+rules:
+  STATEMENT:
+    - '?OBJ VAR ID.eq QUOTE ID.end'
+    - '?OBJ VAR ID.eq VAR ID.end'
+    - '?OBJ VAR ID.eq FUNCTION ID.end'
+    - '(STATEMENT)'
+  CONDITIONAL:
+    - 'ID.if (CONDITION) { STATEMENTS }'
+    - 'ID.if (CONDITION) STATEMENT'
+  CONDITION: 'STATEMENT ID.cond STATEMENT'
