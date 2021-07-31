@@ -61,6 +61,7 @@ pub fn process_args() -> ArgFlags {
 		  .add_argument("FILES", Collect,
 						"Files to parse and translate.")
 			.required();
+		ap.parse_args_or_exit();
 	}
 	return main_flags;
 }

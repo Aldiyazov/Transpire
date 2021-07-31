@@ -5,7 +5,7 @@
 mod prompt;
 
 fn main() {
-    let fflags = prompt::process_args();
-    println!("Suck Ma Balls too!");
-    println!("Do flags work? {}", fflags.src_lang);
+    // TODO - Setup flag usage.
+    // let fflags = prompt::process_args();
+    prompt::process_args();
 }
